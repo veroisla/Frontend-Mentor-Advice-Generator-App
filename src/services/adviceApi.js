@@ -1,8 +1,8 @@
 const getApiData = () => {
-  return fetch('https://api.adviceslip.com')
+  return fetch('https://api.adviceslip.com/advice')
     .then((response) => response.json())
-    .then((data) => {
-      return data;
+    .then((response) => {
+      return response;
     });
 };
 
