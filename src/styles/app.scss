@@ -29,6 +29,7 @@
     font-size: 28px;
     color: $--color-light-cyan;
     margin-bottom: 30px;
+    text-align: center;
    }
 
    &__lineDesktop {
@@ -62,8 +63,10 @@
         &__lineDesktop {
             display: flex;
         }
+
+        &__advice {
+            width: 400px;
+        }
     }
-
-
    }
 }
