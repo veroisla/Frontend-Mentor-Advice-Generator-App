@@ -10,7 +10,8 @@ import getApiData from '../services/adviceApi';
 function App() {
   return (
     <>
-      <main>
+      {' '}
+      <main className="main">
         <div className="card">
           <p className="card__adviceNumber">advice</p>
           <p className="card__advice">"Confia en tí"</p>
