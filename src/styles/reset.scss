@@ -1,3 +1,6 @@
-* {
+@import "../styles/vars.scss";
+
+body {
     font-family: 'Manrope', sans-serif;
+    background-color: $--color-dark-blue;
 }

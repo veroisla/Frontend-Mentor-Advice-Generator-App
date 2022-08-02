@@ -1,0 +1,33 @@
+
+@import '../styles/reset.scss';
+@import '../styles/vars.scss';
+
+
+.card {
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+   background-color: $--color-dark-grayish-blue;
+   border-radius: 10px;
+   margin: 200px 25px;
+
+
+   &__adviceNumber {
+   color: $--color-neon-green;
+   margin-top: 40px; 
+   text-transform: uppercase;
+   }
+
+   &__advice {
+    color: $--color-light-cyan;
+    margin-bottom: 30px;
+   }
+
+   &__circle {
+    background-color: $--color-neon-green;
+    padding: 20px;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+   }
+}
