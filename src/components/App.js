@@ -7,12 +7,14 @@ import '../styles/app.scss';
 
 import getApiData from '../services/adviceApi';
 import iconDice from '../images/icon-dice.svg';
-import dividerMobile from '../images/divider-mobile.svg';
+import lineMobile from '../images/divider-mobile.svg';
+import lineDesktop from '../images/divider-desktop.svg';
 
 function App() {
   const [adviceData, setAdviceData] = useState([]);
+  const [pressButton, setPressButton] = useState(true);
 
-  console.log(adviceData);
+  // console.log(adviceData);
 
   //useEffect
 
@@ -20,7 +22,12 @@ function App() {
     getApiData().then((response) => {
       setAdviceData(response.slip);
     });
-  }, []);
+  }, [pressButton]);
+
+  const handleClick = (ev) => {
+    setPressButton(ev.target);
+    // console.log('vero');
+  };
 
   return (
     <>
@@ -29,8 +36,17 @@ function App() {
         <div className="card">
           <p className="card__adviceNumber">ADVICE #{adviceData.id}</p>
           <p className="card__advice">{adviceData.advice}</p>
-          <img src={dividerMobile} alt="Linea divisoría"></img>
-          <button type="button" className="card__circle">
+          <img
+            className="card__lineMobile"
+            src={lineMobile}
+            alt="Linea divisoría"
+          ></img>
+          <img
+            className="card__lineDesktop"
+            src={lineDesktop}
+            alt="Linea divisoría"
+          ></img>
+          <button type="button" className="card__circle" onClick={handleClick}>
             <img src={iconDice} alt="Icono dado"></img>
           </button>
         </div>

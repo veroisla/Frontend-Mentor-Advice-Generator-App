@@ -17,6 +17,7 @@
    border-radius: 10px;
    padding: 20px;
    height: fit-content;
+   margin: 10px;
 
    &__adviceNumber {
    color: $--color-neon-green;
@@ -28,6 +29,10 @@
     font-size: 28px;
     color: $--color-light-cyan;
     margin-bottom: 30px;
+   }
+
+   &__lineDesktop {
+    display: none;
    }
 
    &__circle {
@@ -47,8 +52,18 @@
 
     & {
         display: flex;
-        width: fit-content;
+        width: 500px;
         margin: 0px;
+
+        &__lineMobile {
+            display: none;
+        }
+
+        &__lineDesktop {
+            display: flex;
+        }
     }
+
+
    }
 }
