@@ -16,8 +16,6 @@ function App() {
 
   // console.log(adviceData);
 
-  //useEffect
-
   useEffect(() => {
     getApiData().then((response) => {
       setAdviceData(response.slip);
@@ -26,7 +24,6 @@ function App() {
 
   const handleClick = (ev) => {
     setPressButton(ev.target);
-    // console.log('vero');
   };
 
   return (
