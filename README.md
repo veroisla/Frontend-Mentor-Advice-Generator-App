@@ -10,7 +10,7 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Generate a new piece of advice by clicking the dice icon
 
-<img src="/src/images/screenshot.JPG" alt="Img challenge" title="Advice Card Generator">
+<img src="./src/images/screenshoot.JPG" alt="Img challenge" title="Advice Card Generator">
 
 ### Built with
 
