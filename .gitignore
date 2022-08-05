@@ -1,12 +1,12 @@
 
 
-package-lock.jason
+/package-lock.jason
 
-package.json
+/package.json
 
-style-guide.md
+/style-guide.md
 
-.gitignore
+/.gitignore
 
 # dependencies
 /node_modules
