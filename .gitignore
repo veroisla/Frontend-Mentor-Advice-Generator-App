@@ -1,12 +1,7 @@
 
 
-/package-lock.jason
-
-/package.json
-
 /style-guide.md
 
-/.gitignore
 
 # dependencies
 /node_modules
