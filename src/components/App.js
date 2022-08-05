@@ -17,7 +17,7 @@ function App() {
   // console.log(adviceData);
 
   useEffect(() => {
-    getApiData().then((response) => {
+    getApiData(pressButton).then((response) => {
       setAdviceData(response.slip);
     });
   }, [pressButton]);
