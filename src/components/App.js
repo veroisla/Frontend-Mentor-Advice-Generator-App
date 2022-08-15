@@ -32,7 +32,7 @@ function App() {
       <main className="main">
         <div className="card">
           <p className="card__adviceNumber">ADVICE #{adviceData.id}</p>
-          <p className="card__advice">{adviceData.advice}</p>
+          <p className="card__advice">" "{adviceData.advice}"</p>
           <img
             className="card__lineMobile"
             src={lineMobile}
